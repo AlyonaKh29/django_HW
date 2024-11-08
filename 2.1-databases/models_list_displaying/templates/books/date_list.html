@@ -1,5 +1,5 @@
-{% extends "base.html" %}
-{% load static %}
+{% extends 'base.html' %}
+% load static %}
 
 {% block title %}Каталог книг{% endblock %}
 {% block content %}
@@ -16,6 +16,11 @@
             </div>
         {% endfor %}
         </div>
+        <div class="pub_date">
+            <a href="{% url 'date' earlier %}">earlier</a>
+            <a href="{% url 'date' later %}">later</a>
+        </div>
     </div>
-{% endblock %}
 
+
+{% endblock %}
